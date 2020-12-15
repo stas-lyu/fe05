@@ -275,6 +275,17 @@ h2 {
         height: 250px;
     }
 }
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 5px;
+    height: 100px;
+}
+footer p {
+    color: var(--dark)
+}
 
 :root {
     --main-blue: #31aae2;
