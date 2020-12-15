@@ -19,3 +19,9 @@
         width: 1170px;
     }
 }
+
+:root {
+    --main-blue: #31aae2;
+    --dark: #313131;
+    --white: #ffffff;
+}
