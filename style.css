@@ -154,9 +154,6 @@ h2 {
 }
 
 /* Pavel Merinov */
-.grid_final{
-    width: 1939px;
-}
 .grid{
     margin: 0 auto;
     display: grid;
