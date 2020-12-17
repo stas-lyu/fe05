@@ -155,11 +155,12 @@ h2 {
 
 /* Pavel Merinov */
 .grid{
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
     height: 953px;
-    width: 1939px;
+    width: 100%;
     border: 1px solid black;
 }
 .card{
