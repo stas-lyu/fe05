@@ -218,10 +218,79 @@ i{
     border: 1px solid var(--second-color3);
     border-radius: 50px;
 }
+/* Lelikova start */
+.about_me{
+    margin: 20vh auto 10vh auto;
+    width: 85%;
+}
+
+.about_me h2{
+    text-align: center;
+    color: var(--black_grey);
+    font-size: 40px;
+}
+
+.about_me .left{
+    width: 30%;
+    margin: 5vh auto 0 auto;
+}
+.about_me .line{
+    border-top: 1px solid #333333;
+    transform: scale(0.7);
+}
+.about_me .right{
+    width: 65%;
+    text-align: left;
+    margin: auto;
+}
+.about_me .nav {
+    height: 40px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.about_me .fab {
+    padding:6px;
+    color: #dadada;
+    font-size: 12px;
+    width: 12px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.about_me .fab:hover {
+    padding: 5px;
+    color: var(--main-blue);
+    border: 2px solid var(--main-blue);
+}
+
+
+.about_me ul{
+    list-style: none;
+}
+/* Lelikova end */
+
 @media (min-width: 768px) {
     .container {
         width: 750px;
     }
+    /* Lelikova start */
+    .about_me{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .about_me .line{
+        border-left: 1px solid #333333;
+        transform: scale(0.7);
+    }
+    .about_me .right{
+        margin-left: 5vw;
+    }
+    /* Lelikova end */
 }
 
 @media (min-width: 992px) {
