@@ -3,7 +3,13 @@
     --second-color: #31AAE2;
     --second-color2: #DADADA;
     --second-color3:#ffffff;
+    --main-blue: #31aae2;
+    --dark: #313131;
+    --white: #ffffff;
+    --black_grey: #272727;
+    --light_grey: #333333;
 }
+
 .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -273,37 +279,6 @@ i{
 }
 /* Lelikova end */
 
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-    /* Lelikova start */
-    .about_me{
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .about_me .line{
-        border-left: 1px solid #333333;
-        transform: scale(0.7);
-    }
-    .about_me .right{
-        margin-left: 5vw;
-    }
-    /* Lelikova end */
-}
-
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
 
 
 /*maksym Maksym */
@@ -351,9 +326,116 @@ i{
     background-color: var(--black_grey);
 }
 
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 5px;
+    height: 100px;
+}
+footer p {
+    color: var(--dark)
+}
+/*Melnyk Ekaterina*/
+
+.video-content-title{
+    margin-top: 200px;
+    text-align: center;
+}
+.video-content-title h4{
+    font-weight: normal;
+    font-size: 26px;
+}
+.video-line{
+    display: flex;
+    justify-content: center;
+}
+.video-line p{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: absolute;
+    font-size: 10px;
+}
+.video-line::after{
+    position: relative;
+    left: 0;
+    top: 60px;
+    content: "";
+    display: block;
+    width: 3px;
+    height: 70px;
+    background-color: var(--main-blue);
+}
+.grid-squads{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 600px;
+    height: 300px;
+    border: 1px solid var(--light_grey);
+}
+.squads{
+    width: 200px;
+    height: 150px;
+    background-color: var(--main-blue);
+}
+.squads:nth-child(2){
+    background-color: var(--light_grey);
+}
+.squads:nth-child(3){
+    background-color: var(--black_grey);
+}
+.squads:nth-child(4){
+    background-color: var(--dark);
+}
+.squads:nth-child(5){
+    background-color: var(--white);
+}
+.squads:last-child{
+    background-color: var(--main-blue);
+}
+.picture-content{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.video-blog iframe{
+    box-shadow: 1px 1px 5px var(--light_grey);
+    position: relative;
+    top: 200px;
+    left: 530px;
+}
+.video-text{
+    width: 340px;
+    margin: 18px 0 0 70px;
+    font-size: 17px;
+}
+.video-text button{
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid var(--main-blue);
+}
+.video-text button:hover{
+    cursor: pointer;
+}
+.main-video{
+    margin-bottom: 250px;
+}
+
+
 @media (min-width: 768px) {
     .container {
         width: 750px;
+        margin: 0 auto;
     }
     /*maksym Maksym */
     .intro_text h4 {
@@ -371,11 +453,57 @@ i{
         width: 100%;
         height: 200px;
     }
+    /* Lelikova start */
+    .about_me{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .about_me .line{
+        border-left: 1px solid #333333;
+        transform: scale(0.7);
+    }
+    .about_me .right{
+        margin-left: 5vw;
+    }
+    /* Lelikova end */
+
+    /*Melnyk Ekaterina*/
+    .picture-content {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        position: static;
+    }
+    .video-blog{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .video-blog iframe {
+        position: static;
+    }
+    .video-text {
+        width: 331px;
+        margin: 0px 0 0 60px;
+        font-size: 18px;
+    }
+    .main-video {
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .squads {
+        width: 135px;
+    }
+    .grid-squads {
+        width: 405px;
 }
 
 @media (min-width: 992px) {
     .container {
         width: 970px;
+        margin: 0 auto;
     }
     /*maksym Maksym */
     .intro_text h4 {
@@ -393,20 +521,51 @@ i{
         width: 100%;
         height: 250px;
     }
+    /*Melnyk Ekaterina*/
+    .picture-content {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        position: static;
+    }
+    .video-blog{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .video-blog iframe {
+        position: static;
+    }
+
+    .main-video {
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-squads {
+        width: 495px;
+    }
+    .squads {
+        width: 165px;
+    }
 }
 
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
+        margin: 0 auto;
     }
+
     /*maksym Maksym */
     .intro_text h4 {
         font-size: 24px;
     }
+
     .bg_video {
         width: 100%;
         height: 440px;
     }
+
     .grid_intro {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -414,23 +573,115 @@ i{
         width: 100%;
         height: 250px;
     }
-}
-.footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    margin: 5px;
-    height: 100px;
-}
-footer p {
-    color: var(--dark)
-}
 
-:root {
-    --main-blue: #31aae2;
-    --dark: #313131;
-    --white: #ffffff;
-    --black_grey: #272727;
-    --light_grey: #333333;
+    /*Melnyk Ekaterina*/
+    .video-content-title {
+        margin-top: 200px;
+        text-align: center;
+    }
+
+    .video-content-title h4 {
+        font-weight: normal;
+        font-size: 26px;
+    }
+
+    .video-line {
+        display: flex;
+        justify-content: center;
+    }
+
+    .video-line p {
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        position: absolute;
+        font-size: 10px;
+    }
+
+    .video-line::after {
+        position: relative;
+        left: 0;
+        top: 60px;
+        content: "";
+        display: block;
+        width: 3px;
+        height: 70px;
+        background-color: var(--main-blue);
+    }
+
+    .grid-squads {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 600px;
+        height: 300px;
+        border: 1px solid var(--light_grey);
+    }
+
+    .squads {
+        width: 200px;
+        height: 150px;
+        background-color: var(--main-blue);
+    }
+
+    .squads:nth-child(2) {
+        background-color: var(--light_grey);
+    }
+
+    .squads:nth-child(3) {
+        background-color: var(--black_grey);
+    }
+
+    .squads:nth-child(4) {
+        background-color: var(--dark);
+    }
+
+    .squads:nth-child(5) {
+        background-color: var(--white);
+    }
+
+    .squads:last-child {
+        background-color: var(--main-blue);
+    }
+
+    .picture-content {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+
+    .video-blog iframe {
+        box-shadow: 1px 1px 5px var(--light_grey);
+        position: relative;
+        top: 150px;
+        left: 255px;
+    }
+
+    .video-text {
+        width: 340px;
+        margin-top: 18px;
+        margin-left: -60px;
+        font-size: 17px;
+    }
+
+    .video-text button {
+        margin-top: 10px;
+        font-size: 13px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        width: 120px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 3px solid var(--main-blue);
+    }
+
+    .video-text button:hover {
+        cursor: pointer;
+    }
+
+    .main-video {
+        margin-bottom: 250px;
+    }
+}
 }
